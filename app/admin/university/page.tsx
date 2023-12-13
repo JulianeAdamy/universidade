@@ -20,7 +20,7 @@ export default async function Listuniversity() {
 
             <table>
                 <thead>
-                    <tr> <td>Name do Curso</td> <td>Telefone do Universidade</td></tr>
+                    <tr> <td>Name do Curso</td> <td>Telefone de Universidade</td></tr>
                 </thead>
                 <tbody>
                     {
