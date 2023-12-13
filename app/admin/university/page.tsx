@@ -1,10 +1,12 @@
 import { sql } from "@vercel/postgres";
 import { revalidatePath } from "next/cache";
+import { useSearchParams } from "next/navigation";
+
 
 export const revalidate =0
 
-export default async function ListUniversity() {
-    async function deleteUniversity(formData: FormData){
+export default async function Listuniversity() {
+    async function deleteuniversity(formData: FormData){
         "use server"
         const id = formData.get("id") as string;
         await sql`DELETE from university where id=${id}`
@@ -24,11 +26,11 @@ export default async function ListUniversity() {
                     {
                         rows.map((university) => {
                             return (
-                                <tr key={university.id}><td>{university.name}</td> <td>{university.telefone}</td> 
+                                <tr key={university.id}><td>{university.name}</td> <td>{university.telephone}</td> 
                                 <td>
                                     <form >
                                      <input type="text" hidden name="id" value={university.id}/>   
-                                    <button formAction={deleteUniversity}>Excluir</button>
+                                    <button formAction={deleteuniversity}>Excluir</button>
                                     </form>
                                 
                                 </td> 

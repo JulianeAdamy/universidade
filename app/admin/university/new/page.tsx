@@ -4,17 +4,17 @@ import { useSearchParams } from "next/navigation";
 
 export const revalidate = 0
 
-export default function NewUniversity(){ 
+export default function Newuniversity(){ 
   
 
 
   async function saveuniversity(formData: FormData){
     "use server"
     const name = formData.get("name") as string;
-    const  telephone = formData.get(" telephone") as string;
-    console.log("name,  telephone")
+    const telephone = formData.get("telephone") as string;
+    console.log("name, telephone")
 
-    await sql`INSERT INTO university (name,  telephone) VALUES(${name}, ${ telephone})`
+    await sql`INSERT INTO university (name, telephone) VALUES(${name}, ${ telephone})`
     console.log("Acessou função")
 
 
