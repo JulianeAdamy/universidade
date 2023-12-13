@@ -16,7 +16,7 @@ export default async function Listuniversity() {
     return (
         <div>
            
-            <h1 className="text-center text-black">Lista de Universidade</h1>
+            <h1 className="text-center text-black">Lista de Universidades</h1>
 
             <table>
                 <thead>
