@@ -16,11 +16,11 @@ export default async function Listuniversity() {
     return (
         <div>
            
-            <h1 className="text-center text-black">Lista de Curso</h1>
+            <h1 className="text-center text-black">Lista de Universidade</h1>
 
             <table>
                 <thead>
-                    <tr> <td>Name do Curso</td> <td>Telefone do Curso</td></tr>
+                    <tr> <td>Name do Curso</td> <td>Telefone do Universidade</td></tr>
                 </thead>
                 <tbody>
                     {

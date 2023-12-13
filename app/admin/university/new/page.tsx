@@ -22,10 +22,10 @@ export default function Newuniversity(){
   return (
     <div>
       
-      <h1 className="text-black text-center text-4xl">Cadastrar Curso</h1>
+      <h1 className="text-black text-center text-4xl">Cadastrar universidade</h1>
       <form>
-        <input type="text" name="name" placeholder="Nome do curso" /><br /><br />
-        <input type="text" name="telephone" placeholder="Telefone do curso" /> <br /><br />
+        <input type="text" name="name" placeholder="Nome do Universidade" /><br /><br />
+        <input type="text" name="telephone" placeholder="Telefone do Universidade" /> <br /><br />
         <button formAction={saveuniversity} className="text-black">Salvar</button>
         <br />
       </form>
